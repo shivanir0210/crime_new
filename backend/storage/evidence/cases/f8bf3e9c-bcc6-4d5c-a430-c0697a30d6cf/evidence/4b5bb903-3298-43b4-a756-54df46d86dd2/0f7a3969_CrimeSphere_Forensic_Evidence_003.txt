@@ -1,0 +1,28 @@
+CRIMESPHERE AI - FORENSIC EVIDENCE REPORT
+
+Evidence ID: DEMO-EVIDENCE-003
+Case Number: CS-2026-0100
+Evidence Title: Forensic Report - Notification Test 003
+Evidence Type: FORENSIC_REPORT
+
+Collected By: Development Officer One
+Collection Location: Egmore Railway Terminal
+Collection Date: 13-09-2026
+
+Summary:
+This is a new test evidence file created to verify Phase 13
+multi-officer notification delivery.
+
+Test Objective:
+When this evidence is uploaded by Development Officer One,
+all other active officers assigned to the case should receive
+an evidence-upload notification.
+
+Expected Recipients:
+- Development Officer Two
+- Development Officer Three
+- Development Officer Four
+
+Expected Result:
+The uploader should not receive a duplicate self-notification.
+The other assigned active officers should receive an alert.

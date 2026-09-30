@@ -1,0 +1,17 @@
+import logging
+import sys
+from app.config import get_settings
+
+def setup_logging():
+    settings = get_settings()
+    log_level = getattr(logging, settings.LOG_LEVEL.upper(), logging.INFO)
+
+    logging.basicConfig(
+        level=log_level,
+        format="%(asctime)s | %(levelname)-7s | %(name)s | %(message)s",
+        handlers=[
+            logging.StreamHandler(sys.stdout)
+        ]
+    )
+
+logger = logging.getLogger("crimesphere-ai-service")
